@@ -1,0 +1,7 @@
+{
+  "name": "Docu-Podcast & Transcriber",
+  "description": "Transform text from documents into a two-person podcast with AI-generated dialogue and audio. Also features real-time microphone transcription.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

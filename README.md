@@ -6,8 +6,6 @@
 
 This is an AI-powered web application that brings your text and voice to life. It leverages the power of the Gemini API to provide two core features: a **Podcast Generator** and a **Live Transcriber**.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1DZuwIsaObk-p9lc8XEx0WbJBWumGZwSq
-
 ## Features
 
 ### 🎙️ Podcast Generator
@@ -87,7 +85,7 @@ This will start the application on a local server (usually `http://localhost:517
 ### Transcribing Live Audio
 
 1.  Navigate to the **Live Transcriber** tab.
-2.  Click the **Start Listening** button. Your browser will ask for microphone permission.
+2.  Click the **Live Transcriber** button. Your browser will ask for microphone permission.
 3.  Start speaking, and you will see the transcript appear in real-time.
 4.  Click **Stop Listening** when you are finished.
 5.  You can then save the transcript to a `.txt` file using the **Save Transcript** button.

@@ -164,7 +164,7 @@ const LiveTranscriber: React.FC = () => {
         <div className="space-y-6">
             <div>
                 <h2 className="text-2xl font-bold text-indigo-400 mb-2">Live Transcriber</h2>
-                <p className="text-gray-400">Click "Start Listening" and speak into your microphone. Your words will be transcribed in real-time.</p>
+                <p className="text-gray-400">Click "Live Transcriber" and speak into your microphone. Your words will be transcribed in real-time.</p>
             </div>
 
             <button

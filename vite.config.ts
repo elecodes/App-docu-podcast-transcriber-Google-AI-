@@ -16,6 +16,9 @@ export default defineConfig(({ mode }): VitestConfigExport => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
     plugins: [react()],
+    optimizeDeps: {
+      exclude: ['@google/genai'],
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
@@ -29,6 +32,19 @@ export default defineConfig(({ mode }): VitestConfigExport => {
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+    },
+    build: {
+      rollupOptions: {
+        external: ['@google/genai'],
+      },
+    }, // Closed the build object
+    server: {
+      host: '0.0.0.0',
+      port: 5173,
+      hmr: {
+          host: 'localhost',
+          clientPort: 5173,
+      },
     },
   };
 });

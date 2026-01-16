@@ -26,8 +26,17 @@ View your app in AI Studio: https://ai.studio/apps/drive/1DZuwIsaObk-p9lc8XEx0Wb
 ## Tech Stack
 
 -   **Frontend:** React, Vite, TypeScript, Tailwind CSS
--   **AI:** Google Gemini API (`@google/genai`)
+-   **AI:** Google Gemini API (`@google/genai`) - Powered by **Gemini 2.5 Flash** & **Native Audio Preview**
 -   **Audio Processing:** Web Audio API
+
+## ℹ️ Portfolio Demo Architecture
+
+To remain within the **free tier** of the Gemini API for this public demo deployment, the following architectural constraint has been implemented:
+
+-   **"Demo Mode" Enabled:** The Podcast Generator is configured to produce a concise **30-second teaser** (approx. 4 turns of dialogue).
+-   **Why?** This ensures real-time performance and zero cost for evaluation purposes, avoiding API quota limits (429 errors) during high-traffic testing.
+-   **Production Path:** In a real-world deployment, this constraint would be removed, utilizing a paid API tier or an offline job queue for generating full-length podcast episodes.
+-   **Model Upgrade:** Now utilizes **Gemini 2.5 Flash** for improved speed and reliability, replacing the older Flash 1.5 models.
 
 ## Getting Started
 

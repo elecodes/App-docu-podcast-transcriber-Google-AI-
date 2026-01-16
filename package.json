@@ -10,14 +10,21 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@google/genai": "^1.35.0",
     "react": "^19.2.0",
-    "@google/genai": "^1.29.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@babel/core": "^7.28.6",
+    "@babel/helper-compilation-targets": "^7.28.6",
+    "@babel/helper-validator-identifier": "^7.28.5",
+    "@babel/types": "^7.28.6",
+    "@types/node": "^25.0.8",
+    "@vitejs/plugin-react": "^5.1.2",
+    "baseline-browser-mapping": "^2.9.14",
+    "node-releases": "^2.0.27",
+    "rollup": "^4.55.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   }
 }

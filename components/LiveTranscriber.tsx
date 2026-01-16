@@ -1,7 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { GoogleGenAI, Modality } from '@google/genai';
-// Fix: `LiveSession` is not an exported member of `@google/genai`. Import `Blob` type for local interface definition.
-import type { Blob } from '@google/genai';
+// Fix: `LiveSession` is not an exported member of `@google/genai`. Using global Blob type.
 import { createBlob } from '../utils/audioUtils';
 import { MicIcon, StopIcon, LoaderIcon, DownloadIcon } from './icons';
 

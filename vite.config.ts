@@ -37,14 +37,6 @@ export default defineConfig(({ mode }): VitestConfigExport => {
       rollupOptions: {
         external: ['@google/genai'],
       },
-    }, // Closed the build object
-    server: {
-      host: '0.0.0.0',
-      port: 5173,
-      hmr: {
-          host: 'localhost',
-          clientPort: 5173,
-      },
     },
   };
 });

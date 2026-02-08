@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import PodcastGenerator from './components/PodcastGenerator';
-import LiveTranscriber from './components/LiveTranscriber';
-import { BrainCircuitIcon, MicIcon } from './components/icons';
+import PodcastGenerator from '../components/PodcastGenerator';
+import LiveTranscriber from '../components/LiveTranscriber';
+import { BrainCircuitIcon, MicIcon } from '../components/icons';
 
 type ActiveTab = 'podcast' | 'transcriber';
 
